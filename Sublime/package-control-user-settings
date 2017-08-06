@@ -12,6 +12,9 @@
         "Nix",
         "Package Control",
         "SublimeCodeIntel",
-        "TrailingSpaces"
+        "TrailingSpaces",
+        "Markdown Preview",
+        "MarkdownEditing",
+        "Python Improved"
     ]
 }
