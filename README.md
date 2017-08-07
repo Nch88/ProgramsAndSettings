@@ -1,6 +1,7 @@
 # ProgramsAndSettings
-Settings for different programs
+Settings for different programs.
 
+**NB! Remember to backup ssh keys from old machine!**
 
 ## List of useful programs:
 - Google chrome
@@ -9,7 +10,9 @@ Settings for different programs
     + See Sublime folder for nice-to-have packages
 - i3wm
 - zsh
+    + zgen
 - docker
 - git
 - git gui
 - bpython
+- pip
