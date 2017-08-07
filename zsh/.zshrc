@@ -1,12 +1,15 @@
 # The following lines were added by compinstall
-
 zstyle ':completion:*' completer _expand _complete _ignored _correct _approximate
 zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}'
 zstyle ':completion:*' max-errors 4
 zstyle :compinstall filename '/home/sja/.zshrc'
 
 setopt inc_append_history
-setopt share_history
+# Save timestamp and duration of commands in host file
+setopt extended_history
+
+setopt auto_pushd
+setopt pushd_ignore_dups
 
 autoload -Uz compinit
 compinit
@@ -38,6 +41,11 @@ alias grep='grep --color=always'
 alias ll='ls -lh --color=auto'
 alias s='apt search'
 alias i='sudo apt install -y'
+alias gs='git status'
+alias gco='git checkout'
+alias gc='git clone'
+alias gg='git gui'
+alias gl='git log'
 
 u () {
     args=($@)
@@ -51,19 +59,20 @@ u () {
     fi
 }
 
-source "/usr/share/zgen/zgen.zsh"
+source "${HOME}/.zgen/zgen.zsh"
 if ! zgen saved; then
 
     zgen load zsh-users/zsh-syntax-highlighting
-    zgen load zsh-users/zsh-autosuggestions
     zgen load zsh-users/zsh-history-substring-search
-    zgen oh-my-zsh plugins/vi-mode
+    zgen load zsh-users/zsh-autosuggestions
 
     zgen save
 fi
 
-bindkey '^[[A' history-substring-search-up
-bindkey '^[[B' history-substring-search-down
+bindkey '^[[1;5A' history-substring-search-up
+bindkey '^[[1;5B' history-substring-search-down
+bindkey "^[[1;5C" forward-word
+bindkey "^[[1;5D" backward-word
 
 HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND='fg=yellow,bold'
 HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_NOT_FOUND='fg=magenta,bold'
