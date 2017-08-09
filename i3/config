@@ -128,6 +128,13 @@ bindsym Mod1+Shift+8 move container to workspace 8
 bindsym Mod1+Shift+9 move container to workspace 9
 bindsym Mod1+Shift+0 move container to workspace 10
 
+# move current workspace to left or right monitor
+bindsym Mod1+n move workspace to output left
+bindsym Mod1+m move workspace to output right
+
+# use imagemagick's import as snipping tool
+bindsym --release Shift+Print exec import png:- | tee $HOME/Pictures/Screenshots/`date +%Y-%m-%d_%H:%M:%S`.png | xclip -selection clipboard -t image/png -i
+
 # reload the configuration file
 bindsym Mod1+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)

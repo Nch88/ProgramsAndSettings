@@ -48,6 +48,7 @@ alias gco='git checkout'
 alias gc='git clone'
 alias gg='git gui'
 alias gl='git log'
+alias gf='git fetch'
 
 u () {
     args=($@)

@@ -16,3 +16,6 @@ Settings for different programs.
 - git gui
 - bpython
 - pip
+- tensorflow
+- imagemagick
+    + import, bound in i3 config (remember to create Screenshots folder in ~/Pictures)
