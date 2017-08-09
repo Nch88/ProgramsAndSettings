@@ -135,6 +135,9 @@ bindsym Mod1+m move workspace to output right
 # use imagemagick's import as snipping tool
 bindsym --release Shift+Print exec import png:- | tee $HOME/Pictures/Screenshots/`date +%Y-%m-%d_%H:%M:%S`.png | xclip -selection clipboard -t image/png -i
 
+# lock the screen
+bindsym Mod1+F2 exec i3lock -t -i $HOME/.i3/lock_screen.png
+
 # reload the configuration file
 bindsym Mod1+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
