@@ -15,6 +15,8 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+plugins=(git ssh-agent)
+
 HISTFILE=~/.histfile
 HISTSIZE=1000000
 SAVEHIST=1000000
