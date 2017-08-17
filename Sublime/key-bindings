@@ -11,6 +11,6 @@
     { "keys": ["ctrl+v"], "command": "paste_and_indent" },
     { "keys": ["ctrl+shift+t"], "command": "delete_trailing_spaces" },
     { "keys": ["ctrl+½"], "command": "show_panel", "args": {"panel": "console", "toggle": true} },
-    { "keys": ["alt+m"], "command": "markdown_preview", "args": {"target": "browser", "parser":"markdown"} }
+    { "keys": ["ctrl+alt+m"], "command": "markdown_preview", "args": {"target": "browser", "parser":"markdown"} }
 
 ]
