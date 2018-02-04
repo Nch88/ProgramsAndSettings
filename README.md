@@ -14,6 +14,14 @@ Settings for different programs.
     + *add locale line to /usr/bin/dmenu_run*
 - zsh
     + zgen
+- playerctl
+    + *download deb package from git repo*
+    + *Needed to control media playback using keys*
+- light
+    + help2man
+        + *install from apt*
+    + *clone repo:* https://github.com/haikarainen/light, *make, and make install*
+    + *Needed to control screen brightness using keys*
 - docker
 - git
 - git gui
@@ -23,3 +31,7 @@ Settings for different programs.
 - imagemagick
     + import, bound in i3 config (remember to create Screenshots folder in ~/Pictures)
 - hibernate
+- spotify
+- redshift
+    + redshift-gtk
+    + *Start redshift-gtk and enable auto-start*

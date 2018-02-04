@@ -15,3 +15,6 @@ rm "$HOME/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap"
 ln -s $(pwd)/Sublime/key-bindings "$HOME/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap"
 
 gsettings set org.gnome.desktop.background show-desktop-icons false
+
+rm $HOME/.config/redshift.conf
+ln -s $(pwd)/redshift/redshift.conf $HOME/.config/redshift.conf

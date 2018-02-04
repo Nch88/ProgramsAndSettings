@@ -140,13 +140,43 @@ bindsym --release Shift+Print exec import png:- | tee $HOME/Pictures/Screenshots
 
 # lock the screen
 set $lock_w_img i3lock -t -i $HOME/.i3/lock_screen.png
-bindsym $mod+F2 exec $lock_w_img
+bindsym $mod+F2 exec --no-startup-id $lock_w_img
 
 # sleep system
-bindsym $mod+F3 exec $lock_w_img && systemctl suspend
+bindsym $mod+F3 exec --no-startup-id $lock_w_img && systemctl suspend
 
 # hibernate system
-bindsym $mod+F4 exec $lock_w_img && systemctl hibernate
+bindsym $mod+F4 exec --no-startup-id $lock_w_img && systemctl hibernate
+
+## Setup touchpad using xinput
+# Enable horizontal scrolling
+#exec $HOME/git/ProgramsAndSettings/xinput_setup.sh
+
+## Bind function keys on keyboard
+## Note: use xev to get key names
+# Mute/unmute
+bindsym XF86AudioMute exec --no-startup-id amixer -q -D pulse sset Master toggle
+
+# Volume up
+bindsym XF86AudioRaiseVolume exec --no-startup-id amixer set Master 5%+
+
+# Volume down
+bindsym XF86AudioLowerVolume exec --no-startup-id amixer set Master 5%-
+
+# Play/pause media
+bindsym XF86AudioPlay exec --no-startup-id playerctl play-pause
+
+# Next track
+bindsym XF86AudioNext exec --no-startup-id playerctl next
+
+# Previous track
+bindsym XF86AudioPrev exec --no-startup-id playerctl previous
+
+# Brightness up
+bindsym XF86MonBrightnessUp exec --no-startup-id light -A 5 && notify-send Brightness "$(light)"
+
+# Brightness down
+bindsym XF86MonBrightnessDown exec --no-startup-id light -U 5 && notify-send Brightness "$(light)"
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -198,3 +228,4 @@ bar {
 # Please remove the following exec line:
 #######################################################################
 #exec i3-config-wizard
+
