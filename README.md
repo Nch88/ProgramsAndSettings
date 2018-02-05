@@ -15,7 +15,7 @@ Settings for different programs.
 - zsh
     + zgen
 - playerctl
-    + *download deb package from git repo*
+    + *download deb package from git repo:* https://github.com/acrisci/playerctl/releases
     + *Needed to control media playback using keys*
 - light
     + help2man
