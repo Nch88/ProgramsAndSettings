@@ -9,6 +9,7 @@ Settings for different programs.
 - Sublime Text 3
     + Package control
     + See Sublime folder for nice-to-have packages
+- Visual Studio Code
 - i3wm
     + *install i3 package from apt*
     + *add locale line to /usr/bin/dmenu_run*
@@ -35,3 +36,7 @@ Settings for different programs.
 - redshift
     + redshift-gtk
     + *Start redshift-gtk and enable auto-start*
+- node.js
+    + npm
+    - elm-lang
+        + elm-format
