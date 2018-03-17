@@ -24,3 +24,5 @@ ln -s $(pwd)/vscode/settings.json $HOME/.config/Code/User/settings.json
 
 rm $HOME/.config/Code/User/keybindings.json
 ln -s $(pwd)/vscode/keybindings.json $HOME/.config/Code/User/keybindings.json
+
+sudo cp -s $HOME/opt/foxitsoftware/foxitreader/FoxitReader.sh /usr/local/bin/foxit
