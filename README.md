@@ -10,6 +10,7 @@ Settings for different programs.
     + Package control
     + See Sublime folder for nice-to-have packages
 - Visual Studio Code
+    + Trailing spaces
 - i3wm
     + *install i3 package from apt*
     + *add locale line to /usr/bin/dmenu_run*

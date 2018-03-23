@@ -8,5 +8,6 @@
     "editor.formatOnPaste": true,
     "[elm]": {
         "editor.formatOnSave": true
-    }
+    },
+    "search.followSymlinks": false
 }
