@@ -12,6 +12,8 @@ Settings for different programs.
     + See Sublime folder for nice-to-have packages
 - Visual Studio Code (https://code.visualstudio.com/download)
     + Trailing spaces (package manager)
+    + If nodejs installed
+        - Node Exec
 - i3wm
     + *add i3 repo to apt for newest version and then install i3 package from apt*
     + *add locale line to /usr/bin/dmenu_run if needed*
