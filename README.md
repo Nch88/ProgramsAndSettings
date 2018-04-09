@@ -39,7 +39,8 @@ Settings for different programs.
 - redshift (apt)
     + redshift-gtk (apt)
     + *Start redshift-gtk and enable auto-start*
-- node.js
+- node.js (https://nodejs.org/en/download/package-manager/)
     + npm
     - elm-lang
         + elm-format
+    + yarn (https://yarnpkg.com/lang/en/docs/install/)
