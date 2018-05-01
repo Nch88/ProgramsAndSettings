@@ -16,9 +16,11 @@ Settings for different programs.
         - Node Exec
 - i3wm
     + *add i3 repo to apt for newest version and then install i3 package from apt*
+        - https://i3wm.org/docs/repositories.html
     + *add locale line to /usr/bin/dmenu_run if needed*
 - zsh (apt)
-    + zgen (github)
+    + zgen (https://github.com/tarjoilija/zgen)
+    + set as default: chsh -s $(which zsh)
 - playerctl
     + *download deb package from git repo:* https://github.com/acrisci/playerctl/releases
     + *Needed to control media playback using keys*
@@ -37,7 +39,7 @@ Settings for different programs.
 - imagemagick
     + import, bound in i3 config (remember to create Screenshots folder in ~/Pictures)
 - hibernate (apt)
-- spotify
+- spotify (https://www.spotify.com/au/download/linux/?tblang=french)
 - redshift (apt)
     + redshift-gtk (apt)
     + *Start redshift-gtk and enable auto-start*
