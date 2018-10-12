@@ -3,6 +3,34 @@
         "key": "ctrl+'",
         "command": "editor.action.commentLine",
         "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+alt+d",
+        "command": "editor.action.goToDeclaration"
+    },
+    {
+        "key": "f12",
+        "command": "-editor.action.goToDeclaration"
+    },
+    {
+        "key": "alt+d",
+        "command": "workbench.action.navigateBack"
+    },
+    {
+        "key": "alt+-",
+        "command": "-workbench.action.navigateBack"
+    },
+    {
+        "key": "tab",
+        "command": "editor.action.indentLines",
+        "when": "editorHasSelection"
+    },
+    {
+        "key": "ctrl+tab",
+        "command": "workbench.action.nextEditor"
+    },
+    {
+        "key": "ctrl+shift+tab",
+        "command": "workbench.action.previousEditor"
     }
-    
 ]

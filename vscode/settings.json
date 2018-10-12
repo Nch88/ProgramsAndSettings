@@ -9,5 +9,6 @@
     "[elm]": {
         "editor.formatOnSave": true
     },
-    "search.followSymlinks": false
+    "search.followSymlinks": false,
+    "editor.wordWrap": "on"
 }
