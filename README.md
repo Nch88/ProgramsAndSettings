@@ -48,3 +48,6 @@ Settings for different programs.
     - elm-lang
         + elm-format
     + yarn (https://yarnpkg.com/lang/en/docs/install/)
+- sstp-client (https://launchpad.net/~eivnaes/+archive/ubuntu/network-manager-sstp)
+    + Secure VPN protocol
+    + Follow link, add repo, install sstp-client via apt
