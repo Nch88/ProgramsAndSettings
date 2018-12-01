@@ -55,7 +55,7 @@ Settings for different programs.
     
 ## Useful tips
 ### Set up hibernate
-Create swap file: https://askubuntu.com/questions/1031275/increase-swap-in-ubuntu-18-04-under-lvm-and-encrypted-file-system
-Remove LVM logical volume: https://askubuntu.com/questions/532121/problem-removing-swap-partition
-Remove initramfs link to swap partition: https://www.linuxuprising.com/2018/08/how-to-use-swap-file-instead-of-swap.html
-Add link to swap file to grub: https://wiki.debian.org/Hibernation/Hibernate_Without_Swap_Partition
+- Create swap file: https://askubuntu.com/questions/1031275/increase-swap-in-ubuntu-18-04-under-lvm-and-encrypted-file-system
+- Remove LVM logical volume: https://askubuntu.com/questions/532121/problem-removing-swap-partition
+- Remove initramfs link to swap partition: https://www.linuxuprising.com/2018/08/how-to-use-swap-file-instead-of-swap.html
+- Add link to swap file to grub: https://wiki.debian.org/Hibernation/Hibernate_Without_Swap_Partition
