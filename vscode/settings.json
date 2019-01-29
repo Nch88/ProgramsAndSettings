@@ -10,5 +10,18 @@
         "editor.formatOnSave": true
     },
     "search.followSymlinks": false,
-    "editor.wordWrap": "on"
+    "editor.wordWrap": "on",
+    "go.useLanguageServer": true,
+    "go.alternateTools": {
+        "go-langserver": "bingo"
+    },
+    "go.languageServerFlags": [
+        "--format-style",
+        "goimports"
+    ],
+    "go.languageServerExperimentalFeatures": {
+        "format": true,
+        "autoComplete": true
+    },
+    "breadcrumbs.enabled": true
 }

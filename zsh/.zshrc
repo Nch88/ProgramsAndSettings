@@ -88,3 +88,11 @@ my-backward-delete-word() {
 zle -N my-backward-delete-word
 bindkey '^W' my-backward-delete-word
 [[ -s "/home/nch/.gvm/scripts/gvm" ]] && source "/home/nch/.gvm/scripts/gvm"
+
+# Getting oracle instantclient to work
+export ORA_REL_MAJOR=12.2
+export ORACLE_HOME=/usr/lib/oracle/${ORA_REL_MAJOR}/client64
+export LD_LIBRARY_PATH=/usr/lib/oracle///lib:/usr/local/lib:/usr/lib64
+export C_INCLUDE_PATH=/usr/include:/usr/lib/oracle///lib:/usr/include/oracle//:/usr/local/include
+export CGO_CFLAGS=-I/${ORACLE_HOME}
+export CGO_LDFLAGS="-L/${ORACLE_HOME}/lib -lclntsh"
