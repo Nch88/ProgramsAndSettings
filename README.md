@@ -27,7 +27,7 @@ Settings for different programs.
 - light
     + help2man
         + *install from apt*
-    + *clone repo:* https://github.com/haikarainen/light, *make, and make install*
+    + Download .deb package from github/releases
     + *Needed to control screen brightness using keys*
 - docker
 - git (apt)
@@ -51,8 +51,8 @@ Settings for different programs.
 - sstp-client (https://launchpad.net/~eivnaes/+archive/ubuntu/network-manager-sstp)
     + Secure VPN protocol
     + Follow link, add repo, install sstp-client via apt
-    
-    
+
+
 ## Useful tips
 ### Set up hibernate
 - Create swap file: https://askubuntu.com/questions/1031275/increase-swap-in-ubuntu-18-04-under-lvm-and-encrypted-file-system

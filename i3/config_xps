@@ -12,11 +12,11 @@
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
 font pango:monospace 10
-exec xrandr --dpi 220
+# exec xrandr --dpi 220
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-#font pango:DejaVu Sans Mono 16
+#font pango:DejaVu Sans Mono 18
 
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
@@ -180,6 +180,15 @@ exec --no-startup-id nm-applet
 
 # Enable horizontal scrolling
 exec --no-startup-id synclient HorizTwoFingerScroll=1
+
+# Enable touchpad tapping
+exec --no-startup-id xinput set-prop 13 283 1
+
+# Increase touchpad acceleration
+exec --no-startup-id xinput set-prop 13 303 0.8
+
+# Start redshift
+exec --no-startup-id killall -q redshift ; redshift
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
