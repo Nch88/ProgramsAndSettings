@@ -175,7 +175,7 @@ bindsym XF86MonBrightnessUp exec --no-startup-id light -A 5
 bindsym XF86MonBrightnessDown exec --no-startup-id light -U 5
 
 # Start redshift
-exec --no-startup-id killall -q redshift ; redshift
+exec --no-startup-id redshift
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
