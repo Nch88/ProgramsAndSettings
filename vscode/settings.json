@@ -1,5 +1,5 @@
 {
-    "window.zoomLevel": 1.2,
+    "window.zoomLevel": 1,
     "editor.autoClosingBrackets": true,
     "trailing-spaces.trimOnSave": true,
     "sublimeTextKeymap.promptV3Features": true,
@@ -23,5 +23,9 @@
         "format": true,
         "autoComplete": true
     },
-    "breadcrumbs.enabled": true
+    "breadcrumbs.enabled": true,
+    "markdown.preview.scrollEditorWithPreview": false,
+    "markdown.preview.scrollPreviewWithEditor": false,
+    "markdown.preview.markEditorSelection": false,
+    "homebrewery.enabled": true
 }
