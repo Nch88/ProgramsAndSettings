@@ -188,7 +188,7 @@ exec --no-startup-id xinput set-prop 13 283 1
 exec --no-startup-id xinput set-prop 13 303 0.8
 
 # Start redshift
-exec --no-startup-id killall -q redshift ; redshift
+exec --no-startup-id redshift
 
 # reload the configuration file
 bindsym $mod+Shift+c reload

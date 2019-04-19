@@ -174,6 +174,9 @@ bindsym XF86MonBrightnessUp exec --no-startup-id light -A 5
 # Brightness down
 bindsym XF86MonBrightnessDown exec --no-startup-id light -U 5
 
+# Start redshift
+exec --no-startup-id redshift
+
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
