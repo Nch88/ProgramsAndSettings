@@ -29,6 +29,9 @@ Settings for different programs.
         + *install from apt*
     + Download .deb package from github/releases
     + *Needed to control screen brightness using keys*
+    + If it fails run with -v 1 to see error msg
+        + Create required 'minimum' file with minimum value
+        + chown the required backlight/brightness file
 - docker
 - git (apt)
 - git gui (apt)
