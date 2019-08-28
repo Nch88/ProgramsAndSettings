@@ -51,6 +51,7 @@ Settings for different programs.
 - sstp-client (https://launchpad.net/~eivnaes/+archive/ubuntu/network-manager-sstp)
     + Secure VPN protocol
     + Follow link, add repo, install sstp-client via apt
+- Make (apt, via build-essential)
 
 
 ## Useful tips
