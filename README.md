@@ -54,6 +54,8 @@ Settings for different programs.
 
 
 ## Useful tips
+### Multiple ssh keys
+See answer here: https://gist.github.com/jexchan/2351996
 ### Set up hibernate
 - Create swap file: https://askubuntu.com/questions/1031275/increase-swap-in-ubuntu-18-04-under-lvm-and-encrypted-file-system
 - Remove LVM logical volume: https://askubuntu.com/questions/532121/problem-removing-swap-partition
