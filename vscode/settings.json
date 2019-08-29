@@ -27,5 +27,9 @@
     "markdown.preview.scrollEditorWithPreview": false,
     "markdown.preview.scrollPreviewWithEditor": false,
     "markdown.preview.markEditorSelection": false,
-    "homebrewery.enabled": true
+    "homebrewery.enabled": true,
+    "rust.clippy_preference": "on",
+    "[rust]": {
+        "editor.formatOnSave": true
+    },
 }
