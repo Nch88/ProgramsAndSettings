@@ -178,7 +178,10 @@ bindsym XF86MonBrightnessDown exec --no-startup-id light -U 5
 exec --no-startup-id redshift
 
 # Enable touchpad tapping
-exec --no-startup-id xinput set-prop 11 279 1
+exec_always --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1
+
+# Fix scrolling for mouse when working at home
+exec_always --no-startup-id xinput set-prop "Logitech USB Gaming Mouse" "libinput Natural Scrolling Enabled" 0
 
 # Start nm-applet wireless manager
 exec --no-startup-id nm-applet
