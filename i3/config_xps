@@ -135,6 +135,8 @@ bindsym $mod+Shift+0 move container to workspace 10
 # move current workspace to left or right monitor
 bindsym $mod+n move workspace to output left
 bindsym $mod+m move workspace to output right
+bindsym $mod+Shift+n move workspace to output up
+bindsym $mod+Shift+m move workspace to output down
 
 # use imagemagick's import as snipping tool
 bindsym --release Shift+Print exec import png:- | tee $HOME/Pictures/Screenshots/`date +%Y-%m-%d_%H:%M:%S`.png | xclip -selection clipboard -t image/png -i
