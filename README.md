@@ -37,6 +37,9 @@ Settings for different programs.
 - git gui (apt)
 - bpython (apt)
 - pip (see website)
+    + If you apt install and then upgrade (as you should), you need to fix the file '/usr/bin/pip3'
+        + Change the import line to be 'from pip._internal import main as _main'
+        + Change the call of 'main' to '_main*
     + colr
 - tensorflow
 - imagemagick
