@@ -61,6 +61,9 @@ Settings for different programs.
 
 
 ## Useful tips
+### Big cursor
+- Create ~/.Xresources file
+- Add Xcursor.size: 16
 ### Multiple ssh keys
 See answer here: https://gist.github.com/jexchan/2351996
 ### Set up hibernate
