@@ -29,11 +29,17 @@ Settings for different programs.
         + *install from apt*
     + Download .deb package from github/releases
     + *Needed to control screen brightness using keys*
+    + If it fails run with -v 1 to see error msg
+        + Create required 'minimum' file with minimum value
+        + chown the required backlight/brightness file
 - docker
 - git (apt)
 - git gui (apt)
 - bpython (apt)
 - pip (see website)
+    + If you apt install and then upgrade (as you should), you need to fix the file '/usr/bin/pip3'
+        + Change the import line to be 'from pip._internal import main as _main'
+        + Change the call of 'main' to '_main*
     + colr
 - tensorflow
 - imagemagick
@@ -51,9 +57,15 @@ Settings for different programs.
 - sstp-client (https://launchpad.net/~eivnaes/+archive/ubuntu/network-manager-sstp)
     + Secure VPN protocol
     + Follow link, add repo, install sstp-client via apt
+- Make (apt, via build-essential)
 
 
 ## Useful tips
+### Big cursor
+- Create ~/.Xresources file
+- Add Xcursor.size: 16
+### Multiple ssh keys
+See answer here: https://gist.github.com/jexchan/2351996
 ### Set up hibernate
 - Create swap file: https://askubuntu.com/questions/1031275/increase-swap-in-ubuntu-18-04-under-lvm-and-encrypted-file-system
 - Remove LVM logical volume: https://askubuntu.com/questions/532121/problem-removing-swap-partition

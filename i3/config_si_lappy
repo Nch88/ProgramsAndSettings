@@ -179,6 +179,15 @@ bindsym XF86MonBrightnessDown exec --no-startup-id light -U 5
 # Start redshift
 exec --no-startup-id redshift
 
+# Enable touchpad tapping
+exec_always --no-startup-id xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1
+
+# Fix scrolling for mouse when working at home
+exec_always --no-startup-id xinput set-prop "Logitech USB Gaming Mouse" "libinput Natural Scrolling Enabled" 0
+
+# Start nm-applet wireless manager
+exec --no-startup-id nm-applet
+
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
