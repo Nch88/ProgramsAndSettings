@@ -1,5 +1,5 @@
 {
-    "window.zoomLevel": 1,
+    "window.zoomLevel": 2,
     "editor.autoClosingBrackets": true,
     "trailing-spaces.trimOnSave": true,
     "sublimeTextKeymap.promptV3Features": true,
@@ -23,5 +23,9 @@
         "format": true,
         "autoComplete": true
     },
-    "breadcrumbs.enabled": true
+    "breadcrumbs.enabled": true,
+    "[rust]": {
+        "editor.formatOnSave": true
+    },
+    "rust.clippy_preference": "on"
 }
