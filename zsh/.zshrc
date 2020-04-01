@@ -96,3 +96,6 @@ export LD_LIBRARY_PATH=/usr/lib/oracle///lib:/usr/local/lib:/usr/lib64
 export C_INCLUDE_PATH=/usr/include:/usr/lib/oracle///lib:/usr/include/oracle//:/usr/local/include
 export CGO_CFLAGS=-I/${ORACLE_HOME}
 export CGO_LDFLAGS="-L/${ORACLE_HOME}/lib -lclntsh"
+
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
